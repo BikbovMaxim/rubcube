@@ -24,4 +24,6 @@ private:
     std::vector< std::vector< Cell > > _side;
 };
 
+bool operator == (const Side &s1, const Side &s2);
+
 #endif /* __SIDE_HPP__ */

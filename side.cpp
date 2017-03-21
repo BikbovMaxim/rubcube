@@ -70,3 +70,16 @@ std::string Side::printSide ()
     }
     return output;
 }
+
+bool operator== (const Side &s1, const Side &s2)
+{
+    for (size_t i = 0; i < s1.getSize(); ++i)
+    {
+        for (size_t j = 0; j < s1.getSize(); ++j)
+        {
+            if (s1.getCell(i, j) == s2.getCell(i, j))
+                return false;
+        }
+    }
+    return true;
+}
