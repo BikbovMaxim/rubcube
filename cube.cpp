@@ -267,3 +267,15 @@ std::string Cube::printCube ()
     output += _back.printSide ();
     return output;
 }
+
+Side Cube::getFrontSide () const { return this->_front; }
+
+Side Cube::getLeftSide () const { return this->_left; }
+
+Side Cube::getRightSide () const { return this->_right; }
+
+Side Cube::getUpSide () const { return this->_up; }
+
+Side Cube::getDownSide () const { return this->_down; }
+
+Side Cube::getBackSide () const { return this->_back; }

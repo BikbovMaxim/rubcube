@@ -21,6 +21,13 @@ public:
     ReturnCode TurnUpVer (size_t column);
     std::string printCube ();
 
+    Side getFrontSide () const;
+    Side getLeftSide () const;
+    Side getRightSide () const;
+    Side getUpSide () const;
+    Side getDownSide () const;
+    Side getBackSide () const;
+
 private:
     Side _front;
     Side _left;
