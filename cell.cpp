@@ -29,3 +29,11 @@ std::string Cell::printCell ()
         return std::string ("Y");
     }
 }
+
+bool operator==(const Cell &c1, const Cell &c2)
+{
+    if (c1.getColor() == c2.getColor())
+        return true;
+    else
+        return false;
+}
