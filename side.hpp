@@ -13,9 +13,10 @@ public:
     Side (Color c, size_t size);
     Side (std::vector< std::vector< Cell > > &cells, size_t size);
     Side (const Side &side);
-    size_t getSize ();
+
+    size_t getSize () const;
     void setCell (Cell c, size_t i, size_t j);
-    Cell getCell (size_t i, size_t j);
+    Cell getCell (size_t i, size_t j) const;
     std::string printSide ();
 
 private:

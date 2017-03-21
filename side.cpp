@@ -51,11 +51,11 @@ Side::Side (const Side &side)
     }
 }
 
-size_t Side::getSize () { return _size; }
+size_t Side::getSize () const { return _size; }
 
 void Side::setCell (Cell c, size_t i, size_t j) { _side[i][j] = c; }
 
-Cell Side::getCell (size_t i, size_t j) { return _side[i][j]; }
+Cell Side::getCell (size_t i, size_t j) const { return _side[i][j]; }
 
 std::string Side::printSide()
 {
