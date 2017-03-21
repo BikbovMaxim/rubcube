@@ -279,3 +279,20 @@ Side Cube::getUpSide () const { return this->_up; }
 Side Cube::getDownSide () const { return this->_down; }
 
 Side Cube::getBackSide () const { return this->_back; }
+
+bool operator== (const Cube &cub1, const Cube &cub2)
+{
+    if (cub1.getFrontSide () == cub2.getFrontSide () &&
+        cub1.getLeftSide () == cub2.getLeftSide () &&
+        cub1.getRightSide () == cub2.getRightSide () &&
+        cub1.getUpSide () == cub2.getUpSide () &&
+        cub1.getDownSide () == cub2.getDownSide () &&
+        cub1.getBackSide () == cub2.getBackSide ())
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}

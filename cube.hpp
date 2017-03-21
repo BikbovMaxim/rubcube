@@ -37,4 +37,6 @@ private:
     Side _back;
 };
 
+bool operator == (const Cube &cub1, const Cube &cub2);
+
 #endif /* __CUBE_HPP__ */
