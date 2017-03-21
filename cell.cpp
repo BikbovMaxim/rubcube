@@ -7,7 +7,7 @@ Cell::Cell (Color c) { _color = c; }
 
 Cell::Cell (const Cell &c) { _color = c._color; }
 
-Color Cell::getColor () { return _color; }
+Color Cell::getColor () const { return _color; }
 
 void Cell::setColor (Color c) { _color = c; }
 

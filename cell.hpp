@@ -9,7 +9,8 @@ public:
     Cell ();
     Cell (Color c);
     Cell (const Cell &c);
-    Color getColor ();
+
+    Color getColor () const;
     void setColor (Color c);
     std::string printCell ();
 
