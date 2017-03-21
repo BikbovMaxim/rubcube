@@ -19,7 +19,7 @@ Side::Side (std::vector< std::vector< Cell > > &cells, size_t size)
 
 Side::Side () {}
 
-Side::Side(Color c, size_t size)
+Side::Side (Color c, size_t size)
 {
     _size = size;
     for (size_t i = 0; i < size; ++i)
@@ -57,16 +57,16 @@ void Side::setCell (Cell c, size_t i, size_t j) { _side[i][j] = c; }
 
 Cell Side::getCell (size_t i, size_t j) const { return _side[i][j]; }
 
-std::string Side::printSide()
+std::string Side::printSide ()
 {
     std::string output;
     for (size_t i = 0; i < _size; ++i)
     {
-        for(size_t j = 0; j < _size; ++j)
+        for (size_t j = 0; j < _size; ++j)
         {
-            output += _side[i][j].printCell() + " ";
+            output += _side[i][j].printCell () + " ";
         }
-        output  += "\n";
+        output += "\n";
     }
     return output;
 }
