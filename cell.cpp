@@ -11,21 +11,21 @@ Color Cell::getColor () const { return _color; }
 
 void Cell::setColor (Color c) { _color = c; }
 
-std::string Cell::printCell()
+std::string Cell::printCell ()
 {
     switch (_color)
     {
     case Color::Blue:
-        return std::string("B");
+        return std::string ("B");
     case Color::Green:
-        return std::string("G");
+        return std::string ("G");
     case Color::Orange:
-        return std::string("O");
+        return std::string ("O");
     case Color::Red:
-        return  std::string("R");
+        return std::string ("R");
     case Color::White:
-        return std::string("W");
+        return std::string ("W");
     case Color::Yellow:
-        return std::string("Y");
+        return std::string ("Y");
     }
 }
